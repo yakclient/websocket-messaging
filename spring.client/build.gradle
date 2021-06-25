@@ -1,0 +1,16 @@
+group 'net.yakclient'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    implementation project(':base')
+    implementation("org.springframework.boot:spring-boot-starter-jetty:2.5.1") {
+        exclude group: 'org.apache.tomcat.embed', module: 'tomcat-embed-el'
+    }
+//    implementation('org.springframework.boot:spring-boot-starter-web') {
+//        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+//    }
+
+    implementation ('org.springframework.boot:spring-boot-starter-websocket'){
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+}

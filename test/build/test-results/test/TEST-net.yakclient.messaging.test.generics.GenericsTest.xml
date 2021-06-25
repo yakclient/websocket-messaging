@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.yakclient.messaging.test.generics.GenericsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-24T16:17:12" hostname="Durgans-iMac.local" time="0.004">
+  <properties/>
+  <testcase name="testGenericConversion" classname="net.yakclient.messaging.test.generics.GenericsTest" time="0.004"/>
+  <system-out><![CDATA[TestType(value=1)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
