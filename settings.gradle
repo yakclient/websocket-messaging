@@ -1,0 +1,5 @@
+
+rootProject.name = 'websocket-messaging'
+
+include ':base', ':spring.client', ':spring.server', 'spring.common'
+include ':test.common', ':test.spring.client', ':test.spring.server'

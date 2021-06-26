@@ -1,0 +1,9 @@
+group 'net.yakclient'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    api project(':spring.common')
+    implementation ('org.springframework.boot:spring-boot-starter-websocket'){
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+}

@@ -1,0 +1,7 @@
+group 'net.yakclient'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.12.2'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.12.3'
+}
