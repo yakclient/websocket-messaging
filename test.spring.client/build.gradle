@@ -6,6 +6,10 @@ dependencies {
     implementation project(':test.common')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation("org.springframework.boot:spring-boot-starter-jetty:2.5.1") {
+        exclude group: 'org.apache.tomcat.embed', module: 'tomcat-embed-el'
+    }
+
 }
 
 test {
