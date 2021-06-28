@@ -61,6 +61,7 @@ object SocketRegistry {
      * packet type.
      */
     @JvmStatic
+    @JvmOverloads
     fun registerPacket(id: Int = nextId(), type: PCType) {
         packetsById[id] = type
         packetsByClass[type] = id
@@ -72,6 +73,7 @@ object SocketRegistry {
      * that defaults to SocketRegistry#DEFAULT_HANDLER_PRIORITY.
      */
     @JvmStatic
+    @JvmOverloads
     fun <T : SocketPacket> registerHandler(
         type: Class<out T>,
         handler: SocketHandler<T>,
@@ -88,6 +90,7 @@ object SocketRegistry {
      * priority default.
      */
     @JvmStatic
+    @JvmOverloads
     fun <T : SocketPacket> register(
         id: Int = nextId(),
         type: Class<out T>,
